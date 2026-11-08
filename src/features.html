@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080d10" />
+    <meta
+      name="description"
+      content="Explore Miauflix features: configurable sources, movie and TV browsing, playback, Samsung TV support, and personal Plushie profiles."
+    />
+    <meta property="og:title" content="Features — Miauflix" />
+    <meta
+      property="og:description"
+      content="Explore the features that make Miauflix your own streaming service."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Features — Miauflix</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="{{styles}}" />
+    <script src="{{script}}" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {{header}}
+    <main id="main">
+      <section class="features-intro container">
+        <p class="eyebrow">Miauflix features</p>
+        <h1>Make movie night your own.</h1>
+        <p>Find something to watch, settle in, and let your server take care of the stream.</p>
+      </section>
+      <section class="feature sources-section section-line" aria-labelledby="sources-heading">
+        <div class="container feature-layout">
+          <div class="feature-copy">
+            <p class="eyebrow">Bring your own sources</p>
+            <h2 id="sources-heading">Your sources.<br />Your choice.</h2>
+            <p>
+              Start with built-in providers, connect Jackett or Prowlarr, or run your own compatible
+              source service in Docker. Miauflix’s HTTP service contract lets you build your own
+              integrations.
+            </p>
+            <div class="source-links">
+              <a
+                class="button button-small button-outline"
+                href="https://github.com/maury91/miauflix/blob/main/docs/features/sources.md"
+                >Configure sources {{icon:arrow}}</a
+              >
+              <a
+                class="button button-small button-outline"
+                href="https://github.com/maury91/miauflix/blob/main/services/sources/README.md"
+                >Build an integration {{icon:arrow}}</a
+              >
+            </div>
+          </div>
+          <figure class="product-figure">
+            <div class="screen">
+              <img
+                src="assets/sources.webp"
+                width="1440"
+                height="763"
+                loading="lazy"
+                alt="Miauflix Sources settings showing configured providers, enable switches, connection tests, and daily request usage"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="feature section-line">
+        <div class="container feature-layout">
+          <div class="feature-copy">
+            <p class="eyebrow">Find your next favorite</p>
+            <h2>Something good.<br />Always within reach.</h2>
+            <p>
+              Explore movies, TV shows, and anime in one place. Search by name, discover new titles,
+              or pick up a favorite from your watchlist.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/maury91/miauflix/blob/main/docs/features/browsing.md"
+              >Explore browsing {{icon:arrow}}</a
+            >
+          </div>
+          <figure class="product-figure">
+            <div class="screen">
+              <img
+                src="assets/search.webp"
+                width="1200"
+                height="750"
+                loading="lazy"
+                alt="Miauflix search with an on-screen keyboard, genres, recent searches, and movie results"
+              />
+            </div>
+            <figcaption>Actual Miauflix interface · illustrative catalog artwork</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="feature feature-details section-line">
+        <div class="container feature-layout feature-reverse">
+          <figure class="product-figure">
+            <div class="screen">
+              <img
+                src="assets/details.webp"
+                width="1440"
+                height="810"
+                loading="lazy"
+                alt="Miauflix movie details for The Fellowship of the Ring, with artwork, rating, quality, and Watch Now"
+              />
+            </div>
+            <figcaption>Movie details, with playback a click away.</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <p class="eyebrow">From discovery to play</p>
+            <h2>All the details.<br />One Watch Now.</h2>
+            <p>
+              Get the story, artwork, ratings, seasons, and episodes. Miauflix automatically finds a
+              suitable source and prepares it for your device.
+            </p>
+            <p>
+              Keep your place with Continue watching, and make movie night yours with audio and
+              subtitle controls.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/maury91/miauflix/blob/main/docs/features/watching.md"
+              >See how playback works {{icon:arrow}}</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="feature feature-couch section-line">
+        <div class="container feature-layout">
+          <div class="feature-copy">
+            <p class="eyebrow">Made for the couch</p>
+            <h2>Big screen.<br />Small effort.</h2>
+            <p>
+              Settle in and navigate with a keyboard or remote. Sign in by scanning a QR code with
+              your phone, then get back to what you were watching.
+            </p>
+            <p>Use your browser, or install the dedicated app on a supported Samsung TV.</p>
+            <a
+              class="text-link"
+              href="https://github.com/maury91/miauflix/blob/main/docs/setup/samsung-tv.md"
+              >Samsung TV setup {{icon:arrow}}</a
+            >
+          </div>
+          <figure class="product-figure tv-figure">
+            <div class="screen">
+              <img
+                src="assets/login.webp"
+                width="1200"
+                height="675"
+                loading="lazy"
+                alt="Miauflix sign-in screen offering email login or a QR code to scan with a phone"
+              />
+            </div>
+            <div class="tv-feet" aria-hidden="true"></div>
+            <figcaption>Sign-in screen preview · QR code is illustrative</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="profiles-section section-line" aria-labelledby="profiles-heading">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">A little more you</p>
+            <h2 id="profiles-heading">Your profile. Your personality.</h2>
+            <p>
+              Choose who’s watching and keep your own watchlist and progress. Make your Plushie
+              avatar yours with shapes, colors, fabrics, faces, and accessories.
+            </p>
+          </div>
+          <div class="profiles-grid">
+            <figure class="product-figure">
+              <div class="screen">
+                <img
+                  src="assets/profile-selector.webp"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Miauflix profile selector with a blue Plushie avatar named Miau and an Add profile option"
+                />
+              </div>
+              <figcaption>A familiar face for every movie night.</figcaption>
+            </figure>
+            <figure class="product-figure">
+              <div class="screen">
+                <img
+                  src="assets/profile-editor.webp"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Miauflix profile editor with a Plushie preview, color swatches, fabric choices, and customization tabs"
+                />
+              </div>
+              <figcaption>Pick a color, find your fabric, add a little character.</figcaption>
+            </figure>
+          </div>
+          <a
+            class="text-link"
+            href="https://github.com/maury91/miauflix/blob/main/docs/features/accounts.md"
+            >Explore profiles {{icon:arrow}}</a
+          >
+        </div>
+      </section>
+
+      <div class="features-cta container">
+        <a class="button" href="index.html#get-started">Get started</a>
+      </div>
+    </main>
+    {{footer}}
+  </body>
+</html>

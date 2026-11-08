@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080d10" />
+    <meta
+      name="description"
+      content="Your own streaming service. Browse movies and TV shows, find something to watch, and stream from your own Miauflix server. Self-hosted, open source, and made for the couch."
+    />
+    <meta property="og:title" content="Miauflix — Your own streaming service" />
+    <meta
+      property="og:description"
+      content="Browse. Press play. Make yourself at home. A self-hosted streaming service with no media library to manage."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Miauflix — Your own streaming service</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/home.webp" as="image" fetchpriority="high" />
+    <link rel="stylesheet" href="{{styles}}" />
+    <script src="{{script}}" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {{header}}
+    <main id="main">
+      <section class="hero section-line">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <h1>Your own<br /><span>streaming service.</span></h1>
+            <p class="lead">
+              Browse movies and TV shows, choose what to watch, and stream to your browser. Open
+              source and self-hosted, Miauflix finds sources and prepares playback, with no media
+              library to manage.
+            </p>
+            <div class="actions">
+              <a class="button" href="#get-started">Get started</a
+              ><a class="button button-outline" href="https://github.com/maury91/miauflix"
+                >{{icon:github}} View on GitHub</a
+              >
+            </div>
+          </div>
+          <figure class="hero-product">
+            <div class="screen">
+              <div class="screen-bar">
+                <span class="screen-lights"><i></i><i></i><i></i></span
+                ><span>your-server · miauflix</span
+                ><span class="screen-secure">{{icon:shield}} Self-hosted</span>
+              </div>
+              <img
+                src="assets/home.webp"
+                width="1440"
+                height="818"
+                alt="Miauflix home screen featuring Black Clover and rows of anime to browse"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="monitor-foot" aria-hidden="true"></div>
+            <figcaption>Less managing. More watching.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="benefits section-line" aria-label="Miauflix at a glance">
+        <div class="container benefits-grid">
+          <div>
+            {{icon:home}}
+            <div>
+              <h2>Self-hosted</h2>
+              <p>Run on your own server</p>
+            </div>
+          </div>
+          <div>
+            {{icon:monitor}}
+            <div>
+              <h2>Browser-based</h2>
+              <p>Watch in your browser</p>
+            </div>
+          </div>
+          <div>
+            {{icon:cube}}
+            <div>
+              <h2>Docker deployment</h2>
+              <p>Get up and running quickly</p>
+            </div>
+          </div>
+          <div>
+            {{icon:shield}}
+            <div>
+              <h2>VPN protected</h2>
+              <p>Required for discovery by default</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="features">
+        <section class="proactive-section section-line" aria-labelledby="proactive-heading">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Background loading</p>
+              <h2 id="proactive-heading">Less waiting when you press play.</h2>
+              <p>
+                Movie night starts before you press play. Miauflix works in the background as you
+                browse, choose, and watch—giving playback a head start.
+              </p>
+            </div>
+            <ol class="proactive-stages">
+              <li>
+                <div class="proactive-marker">{{icon:search}}</div>
+                <p class="eyebrow">While you browse</p>
+                <h3>Finding your source.</h3>
+                <p>
+                  Miauflix searches for sources for the movie you’re exploring. Linger on a title,
+                  and it can start warming the stream.
+                </p>
+              </li>
+              <li>
+                <div class="proactive-marker">{{icon:play}}</div>
+                <p class="eyebrow">While you decide</p>
+                <h3>Getting ready to play.</h3>
+                <p>
+                  Open the details and Miauflix begins preparing playback while you read about your
+                  choice.
+                </p>
+              </li>
+              <li>
+                <div class="proactive-marker">{{icon:arrow}}</div>
+                <p class="eyebrow">Before the next episode</p>
+                <h3>Preparing what’s next.</h3>
+                <p>
+                  As your episode approaches its end, Miauflix starts downloading the next one in
+                  the background.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="screenshot-section section-line" aria-labelledby="screenshots-heading">
+          <div class="container">
+            <div class="section-heading"><h2 id="screenshots-heading">Take a look inside.</h2></div>
+            <div
+              class="screenshot-carousel"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Miauflix screenshots"
+            >
+              <div
+                class="carousel-track"
+                tabindex="0"
+                aria-label="Screenshots. Use the arrow keys to change the centered image."
+              >
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="1 of 7: Source configuration"
+                >
+                  <img
+                    src="assets/sources.webp"
+                    width="1440"
+                    height="763"
+                    loading="lazy"
+                    alt="Miauflix Sources settings with provider controls, testing, and request usage"
+                  />
+                  <figcaption>Source configuration</figcaption>
+                </figure>
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="2 of 7: Browse and discover"
+                >
+                  <img
+                    src="assets/search.webp"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    alt="Miauflix search with an on-screen keyboard, genres, and results"
+                  />
+                  <figcaption>Browse and discover</figcaption>
+                </figure>
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="3 of 7: Movie details"
+                >
+                  <img
+                    src="assets/details.webp"
+                    width="1440"
+                    height="810"
+                    loading="lazy"
+                    alt="Miauflix movie details for The Fellowship of the Ring, with artwork, rating, quality, and Watch Now"
+                  />
+                  <figcaption>Movie details</figcaption>
+                </figure>
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="4 of 7: Seasons and episodes"
+                >
+                  <img
+                    src="assets/show-episodes.webp"
+                    width="1440"
+                    height="810"
+                    loading="lazy"
+                    alt="Miauflix Black Clover details with seasons and an episode list"
+                  />
+                  <figcaption>Seasons and episodes</figcaption>
+                </figure>
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="5 of 7: Sign in on your TV"
+                >
+                  <img
+                    src="assets/login.webp"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    alt="Miauflix sign-in screen with email and QR code options"
+                  />
+                  <figcaption>Sign in on your TV</figcaption>
+                </figure>
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="6 of 7: Choose who’s watching"
+                >
+                  <img
+                    src="assets/profile-selector.webp"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    alt="Miauflix profile selector with a blue Plushie named Miau"
+                  />
+                  <figcaption>Choose who’s watching</figcaption>
+                </figure>
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="7 of 7: Make your Plushie yours"
+                >
+                  <img
+                    src="assets/profile-editor.webp"
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    alt="Miauflix profile editor with colors, fabrics, and a Plushie preview"
+                  />
+                  <figcaption>Make your Plushie yours</figcaption>
+                </figure>
+              </div>
+              <div class="carousel-controls" hidden>
+                <button
+                  class="carousel-previous icon-button"
+                  type="button"
+                  aria-label="Previous screenshot"
+                >
+                  {{icon:backward}}
+                </button>
+                <div class="carousel-dots">
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 1: Source configuration"
+                    data-slide="0"
+                    aria-current="true"
+                  ></button>
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 2: Browse and discover"
+                    data-slide="1"
+                  ></button>
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 3: Movie details"
+                    data-slide="2"
+                  ></button>
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 4: Seasons and episodes"
+                    data-slide="3"
+                  ></button>
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 5: Sign in on your TV"
+                    data-slide="4"
+                  ></button>
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 6: Choose who’s watching"
+                    data-slide="5"
+                  ></button>
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 7: Make your Plushie yours"
+                    data-slide="6"
+                  ></button>
+                </div>
+                <button
+                  class="carousel-next icon-button"
+                  type="button"
+                  aria-label="Next screenshot"
+                >
+                  {{icon:forward}}
+                </button>
+              </div>
+              <p class="carousel-status" aria-live="off" aria-atomic="true"></p>
+            </div>
+            <div class="carousel-cta"><a class="button" href="features.html">Read more</a></div>
+          </div>
+        </section>
+      </div>
+      <section class="how-section container" id="how-it-works">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>From catalog to playback.</h2>
+          <p>
+            Miauflix brings the pieces together.<br class="desktop-break" />
+            Your server does the work. You choose what’s next.
+          </p>
+        </div>
+        <ol class="steps">
+          <li>
+            <div class="step-icon">{{icon:document}}</div>
+            <span class="step-arrow" aria-hidden="true">→</span>
+            <h3><span>01</span> Browse the catalog</h3>
+            <p>TMDB provides movie and TV information, artwork, and details.</p>
+          </li>
+          <li>
+            <div class="step-icon">{{icon:search}}</div>
+            <span class="step-arrow" aria-hidden="true">→</span>
+            <h3><span>02</span> Find a source</h3>
+            <p>
+              Your server searches available providers for a playable source on the BitTorrent
+              network.
+            </p>
+          </li>
+          <li>
+            <div class="step-icon">{{icon:server}}</div>
+            <span class="step-arrow" aria-hidden="true">→</span>
+            <h3><span>03</span> Prepare the stream</h3>
+            <p>
+              Media downloads to your server’s storage. Playback can begin while the file downloads.
+            </p>
+          </li>
+          <li>
+            <div class="step-icon">{{icon:play}}</div>
+            <h3><span>04</span> Make yourself at home</h3>
+            <p>Watch in your browser or on a supported TV, with playback adapted to your device.</p>
+          </li>
+        </ol>
+        <p class="how-note">
+          Playback startup depends on the source, your connection, and any conversion needed.
+        </p>
+      </section>
+      <section class="setup-section container" id="get-started">
+        <div class="setup-panel">
+          <div class="setup-heading">
+            <div>
+              <p class="eyebrow">Easy setup</p>
+              <h2>From Docker to movie night.</h2>
+              <p>Your own streaming service, in a few steps.</p>
+            </div>
+            <a
+              class="button"
+              href="https://github.com/maury91/miauflix/blob/main/docs/setup/docker-setup.md#prebuilt-images"
+              >Read the setup guide {{icon:arrow}}</a
+            >
+          </div>
+          <div class="setup-screenshots profiles-grid">
+            <figure class="product-figure">
+              <div class="screen">
+                <img
+                  src="assets/admin-setup.webp"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Miauflix first-run screen for creating an administrator account"
+                />
+              </div>
+              <figcaption>1. Create your admin account.</figcaption>
+            </figure>
+            <figure class="product-figure">
+              <div class="screen">
+                <img
+                  src="assets/service-configuration.webp"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Miauflix configuration screen with service settings and connection testing"
+                />
+              </div>
+              <figcaption>2. Configure your services in the browser.</figcaption>
+            </figure>
+          </div>
+          <div class="requirements">
+            <div>
+              {{icon:cube}}
+              <h3>Docker</h3>
+              <p>Prebuilt images for AMD64 and ARM64. No source build needed.</p>
+            </div>
+            <div>
+              {{icon:database}}
+              <h3>TMDB access token</h3>
+              <p>A free token for catalog metadata and artwork.</p>
+            </div>
+            <div>
+              {{icon:storage}}
+              <h3>Persistent storage</h3>
+              <p>Space for settings, your viewing data, and downloaded media.</p>
+            </div>
+            <div class="vpn-requirement">
+              {{icon:shield}}
+              <h3>A VPN <span>(by default)</span></h3>
+              <p>
+                Source discovery and torrent connections require VPN protection unless you opt out.
+              </p>
+            </div>
+          </div>
+          <div class="quick-start">
+            <div class="code-header">
+              <span><span class="status-dot"></span> Quick start</span
+              ><button class="copy-button" type="button" aria-label="Copy quick start commands">
+                {{icon:copy}} <span>Copy commands</span>
+              </button>
+            </div>
+            <pre><code id="setup-commands">curl -fsSLO https://raw.githubusercontent.com/maury91/miauflix/main/docker-compose.yml
+docker compose up -d</code></pre>
+            <p>
+              Then open <code>http://localhost:3000</code>, create your admin account, and add your
+              TMDB token. Complete setup before opening access to other devices.
+              <a
+                href="https://github.com/maury91/miauflix/blob/main/docs/setup/docker-setup.md#using-a-vpn"
+                >Configure your VPN</a
+              >
+              before searching for sources.
+            </p>
+          </div>
+          <p class="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+      <section class="faq-section container" id="faq">
+        <div class="faq-heading">
+          <div>
+            <p class="eyebrow">Frequently asked questions</p>
+            <h2>A few things to know.</h2>
+          </div>
+          <a class="text-link" href="https://github.com/maury91/miauflix/blob/main/docs/features.md"
+            >Explore the feature guide {{icon:arrow}}</a
+          >
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Do I need to maintain a media library? {{icon:chevron}}</summary>
+            <div>
+              <p>
+                No. Miauflix finds sources and prepares playback when you choose a title. Files are
+                downloaded to your server, stored encrypted, and can be reused. You’ll still need
+                enough disk space; Miauflix can free storage while protecting active playback.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Does Miauflix include movies or TV shows? {{icon:chevron}}</summary>
+            <div>
+              <p>
+                Miauflix does not host or distribute content. TMDB supplies catalog information, and
+                your server discovers sources through configured providers. Only access media you
+                are entitled to use, and follow the laws that apply in your country.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Do I need a VPN? {{icon:chevron}}</summary>
+            <div>
+              <p>
+                By default, yes. Source search and the torrent engine check for VPN protection
+                before connecting. The supplied VPN setup uses NordVPN with Gluetun. An opt-out is
+                documented for people who accept that peers can see their IP address; the project
+                advises against opting out on a server.
+              </p>
+              <a
+                href="https://github.com/maury91/miauflix/blob/main/docs/setup/docker-setup.md#using-a-vpn"
+                >Read the VPN guide →</a
+              >
+            </div>
+          </details>
+          <details>
+            <summary>What devices are supported? {{icon:chevron}}</summary>
+            <div>
+              <p>
+                Miauflix plays in a browser and has a dedicated Samsung Tizen TV app. You can
+                navigate with a keyboard or remote. Supported video and audio formats depend on your
+                browser and device; some files need conversion on the server.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Can I use Miauflix outside my home network? {{icon:chevron}}</summary>
+            <div>
+              <p>
+                Yes, with a properly configured server. Create your administrator account first,
+                then follow the documentation to set up your domain and HTTPS with Caddy. Keep
+                source search and torrent traffic protected by a VPN.
+              </p>
+              <a
+                href="https://github.com/maury91/miauflix/blob/main/docs/setup/docker-setup.md#https-with-a-domain"
+                >Set up HTTPS →</a
+              >
+            </div>
+          </details>
+          <details>
+            <summary>Is Miauflix free and open source? {{icon:chevron}}</summary>
+            <div>
+              <p>
+                Yes. Miauflix is available under the MIT license. You provide the server, storage,
+                internet connection, and any external services you choose to use, such as a VPN.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section class="closing section-line">
+        <div class="container closing-layout">
+          <div>
+            <p class="eyebrow">Your next movie night starts here</p>
+            <h2>Ready when you are.</h2>
+            <p>Follow the guide and make Miauflix your own.</p>
+          </div>
+          <div class="actions">
+            <a
+              class="button"
+              href="https://github.com/maury91/miauflix/blob/main/docs/setup/docker-setup.md#prebuilt-images"
+              >Get started {{icon:arrow}}</a
+            ><a class="button button-outline" href="https://github.com/maury91/miauflix"
+              >{{icon:github}} View on GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    {{footer}}
+  </body>
+</html>
