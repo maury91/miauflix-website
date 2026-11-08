@@ -23,7 +23,7 @@ Deploy the contents of `dist/` to any static web host. No server runtime, API ke
 ## Source
 
 - `src/index.html`: homepage, background loading, and screenshot carousel.
-- `src/features.html`: full source, browsing, playback, TV, and profile sections.
+- `src/features.html`: source, browsing, playback, anime, TV, profiles, audio/subtitles, storage, and library credits.
 - `src/partials/`: shared navigation and footer.
 - `src/styles.css`: responsive layouts, dark and light themes, reduced-motion support.
 - `src/script.js`: mobile navigation, theme preference, copy commands, and carousel controls.
@@ -57,10 +57,31 @@ Source configuration captures (settings unchanged; credential inputs empty):
 - `sources-torznab.jpg`: blank form for connecting a Jackett/Prowlarr Torznab endpoint.
 - `sources-repositories.jpg`: source repository list and blank repository URL form.
 
-The homepage carousel cycles through source configuration, search, movie details, episodes, TV sign-in, and both profile screens. It shows three screenshots at a time at their natural aspect ratios in a perspective layout, with narrow previews at the sides. It rotates every five seconds while visible, pauses on hover or keyboard focus, and stops while the page is hidden. Reduced-motion preferences disable automatic movement by default. Previous/next, direct slide selection, and arrow/Home/End keys remain available. Without JavaScript the screenshots remain horizontally scrollable. The primary Read more button and main Features link open `features.html`; both pages work directly from the static build.
+The homepage carousel cycles through source configuration, search, movie details, episodes, TV sign-in, both profile screens, and playback. It shows three screenshots at a time at their natural aspect ratios in a perspective layout, with narrow previews at the sides. It rotates every five seconds while visible, pauses on hover or keyboard focus, and stops while the page is hidden. Reduced-motion preferences disable automatic movement by default. Previous/next, direct slide selection, and arrow/Home/End keys remain available. Without JavaScript the screenshots remain horizontally scrollable. The primary Read more button and main Features link open `features.html`; both pages work directly from the static build.
 
 Carousel direction icons are Material Symbols chevron-backward and chevron-forward, bundled inline from the Iconify API (Google Material Symbols, Apache-2.0).
 
 Owner-supplied originals (`*-1920.png`) include admin setup, service configuration, show episodes, home, profile selector, and profile editor. The homepage Easy setup section uses optimized account and service configuration screenshots. Other product screens appear in the homepage carousel; detailed sections remain on the Features page.
 
 - `movie-details-1920.png`: owner-supplied movie details screenshot, used on the Features page and in the homepage carousel.
+
+## Production deployment
+
+`https://miauflix.cat` runs on `69.62.114.41`. The existing Caddy container handles HTTPS and proxies to the internal Nginx service defined in `deploy/compose.yml`. Caddy also continues serving the TV pairing site.
+
+- Compose and Nginx config: `/opt/miauflix-website/` on the server.
+- Static releases: `/srv/miauflix-website/releases/`; `current` selects the live release.
+- Caddy config: `/opt/tv-pairing/Caddyfile` (the website block is recorded in `deploy/Caddyfile`).
+- Both containers share the existing external `tv-pairing_default` Docker network. Nginx exposes no public host port.
+
+For subsequent updates, build and check locally, upload `dist/` into a new release directory, and atomically switch `current` to it. Keep the previous release for rollback. HTML revalidates on every visit; fingerprinted CSS/JS use immutable caching, and images cache for one hour.
+
+The Features page summarizes implemented behavior from `docs/features/` in the sibling application. Planned features are excluded. Library credits are based on installed package metadata and application usage; this static website does not load those application libraries.
+
+## License
+
+This project is source available under the [PolyForm Noncommercial License 1.0.0](LICENSE). You may use, modify, and share it for permitted noncommercial purposes. Commercial use requires separate permission from the relevant rights holders. See the license for its full terms, including permitted organizational uses.
+
+This license applies to project-owned code and original materials. Third-party libraries, assets, and catalog artwork retain their own licenses and rights. It does not revoke licenses already granted for earlier versions, including earlier MIT-licensed copies.
+
+- `playback-1920.png`: owner-supplied paused player screenshot, included in the homepage carousel as an optimized WebP with its original aspect ratio.

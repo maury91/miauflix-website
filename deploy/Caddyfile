@@ -1,0 +1,5 @@
+# Add this site block to the existing Caddyfile; preserve other sites.
+miauflix.cat {
+    encode zstd gzip
+    reverse_proxy miauflix-website:80
+}

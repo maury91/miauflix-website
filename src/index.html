@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#080d10" />
     <meta
       name="description"
-      content="Your own streaming service. Browse movies and TV shows, find something to watch, and stream from your own Miauflix server. Self-hosted, open source, and made for the couch."
+      content="Your own streaming service. Browse movies and TV shows, find something to watch, and stream from your own Miauflix server. Self-hosted, source available, and made for the couch."
     />
     <meta property="og:title" content="Miauflix — Your own streaming service" />
     <meta
@@ -22,18 +22,17 @@
     <script src="{{script}}" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
     {{header}}
     <main id="main">
       <section class="hero section-line">
         <div class="hero-glow" aria-hidden="true"></div>
         <div class="container hero-layout">
           <div class="hero-copy">
-            <h1>Your own<br /><span>streaming service.</span></h1>
+            <h1>Your own<br /><span>streaming service</span></h1>
             <p class="lead">
-              Browse movies and TV shows, choose what to watch, and stream to your browser. Open
-              source and self-hosted, Miauflix finds sources and prepares playback, with no media
-              library to manage.
+              Browse movies and TV shows, choose what to watch, and stream to your browser. Source
+              available and self-hosted, Miauflix finds sources and prepares playback, with no media
+              library to manage
             </p>
             <div class="actions">
               <a class="button" href="#get-started">Get started</a
@@ -89,7 +88,7 @@
             {{icon:shield}}
             <div>
               <h2>VPN protected</h2>
-              <p>Required for discovery by default</p>
+              <p>Automatically stops discovery when unprotected (configurable)</p>
             </div>
           </div>
         </div>
@@ -99,38 +98,38 @@
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Background loading</p>
-              <h2 id="proactive-heading">Less waiting when you press play.</h2>
+              <h2 id="proactive-heading">Less waiting when you press play</h2>
               <p>
                 Movie night starts before you press play. Miauflix works in the background as you
-                browse, choose, and watch—giving playback a head start.
+                browse, choose, and watch; giving playback a head start.
               </p>
             </div>
             <ol class="proactive-stages">
               <li>
                 <div class="proactive-marker">{{icon:search}}</div>
                 <p class="eyebrow">While you browse</p>
-                <h3>Finding your source.</h3>
+                <h3>Finding your source</h3>
                 <p>
                   Miauflix searches for sources for the movie you’re exploring. Linger on a title,
-                  and it can start warming the stream.
+                  and it can start warming the stream
                 </p>
               </li>
               <li>
                 <div class="proactive-marker">{{icon:play}}</div>
                 <p class="eyebrow">While you decide</p>
-                <h3>Getting ready to play.</h3>
+                <h3>Getting ready to play</h3>
                 <p>
                   Open the details and Miauflix begins preparing playback while you read about your
-                  choice.
+                  choice
                 </p>
               </li>
               <li>
                 <div class="proactive-marker">{{icon:arrow}}</div>
                 <p class="eyebrow">Before the next episode</p>
-                <h3>Preparing what’s next.</h3>
+                <h3>Preparing what’s next</h3>
                 <p>
                   As your episode approaches its end, Miauflix starts downloading the next one in
-                  the background.
+                  the background
                 </p>
               </li>
             </ol>
@@ -138,7 +137,7 @@
         </section>
         <section class="screenshot-section section-line" aria-labelledby="screenshots-heading">
           <div class="container">
-            <div class="section-heading"><h2 id="screenshots-heading">Take a look inside.</h2></div>
+            <div class="section-heading"><h2 id="screenshots-heading">Take a look inside</h2></div>
             <div
               class="screenshot-carousel"
               role="region"
@@ -154,7 +153,7 @@
                   class="carousel-slide"
                   role="group"
                   aria-roledescription="slide"
-                  aria-label="1 of 7: Source configuration"
+                  aria-label="1 of 8: Source configuration"
                 >
                   <img
                     src="assets/sources.webp"
@@ -169,7 +168,7 @@
                   class="carousel-slide"
                   role="group"
                   aria-roledescription="slide"
-                  aria-label="2 of 7: Browse and discover"
+                  aria-label="2 of 8: Browse and discover"
                 >
                   <img
                     src="assets/search.webp"
@@ -184,7 +183,7 @@
                   class="carousel-slide"
                   role="group"
                   aria-roledescription="slide"
-                  aria-label="3 of 7: Movie details"
+                  aria-label="3 of 8: Movie details"
                 >
                   <img
                     src="assets/details.webp"
@@ -199,7 +198,7 @@
                   class="carousel-slide"
                   role="group"
                   aria-roledescription="slide"
-                  aria-label="4 of 7: Seasons and episodes"
+                  aria-label="4 of 8: Seasons and episodes"
                 >
                   <img
                     src="assets/show-episodes.webp"
@@ -214,7 +213,7 @@
                   class="carousel-slide"
                   role="group"
                   aria-roledescription="slide"
-                  aria-label="5 of 7: Sign in on your TV"
+                  aria-label="5 of 8: Sign in on your TV"
                 >
                   <img
                     src="assets/login.webp"
@@ -229,7 +228,7 @@
                   class="carousel-slide"
                   role="group"
                   aria-roledescription="slide"
-                  aria-label="6 of 7: Choose who’s watching"
+                  aria-label="6 of 8: Choose who’s watching"
                 >
                   <img
                     src="assets/profile-selector.webp"
@@ -244,7 +243,7 @@
                   class="carousel-slide"
                   role="group"
                   aria-roledescription="slide"
-                  aria-label="7 of 7: Make your Plushie yours"
+                  aria-label="7 of 8: Make your Plushie yours"
                 >
                   <img
                     src="assets/profile-editor.webp"
@@ -253,7 +252,22 @@
                     loading="lazy"
                     alt="Miauflix profile editor with colors, fabrics, and a Plushie preview"
                   />
-                  <figcaption>Make your Plushie yours</figcaption>
+                  <figcaption>Make your avatar yours</figcaption>
+                </figure>
+                <figure
+                  class="carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="8 of 8: Make yourself at home"
+                >
+                  <img
+                    src="assets/playback.webp"
+                    width="1440"
+                    height="810"
+                    loading="lazy"
+                    alt="Miauflix player paused on a lake scene, with a seek bar, captions, volume, and fullscreen controls"
+                  />
+                  <figcaption>Make yourself at home</figcaption>
                 </figure>
               </div>
               <div class="carousel-controls" hidden>
@@ -308,6 +322,12 @@
                     aria-label="Show screenshot 7: Make your Plushie yours"
                     data-slide="6"
                   ></button>
+                  <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show screenshot 8: Make yourself at home"
+                    data-slide="7"
+                  ></button>
                 </div>
                 <button
                   class="carousel-next icon-button"
@@ -326,44 +346,41 @@
       <section class="how-section container" id="how-it-works">
         <div class="section-heading">
           <p class="eyebrow">How it works</p>
-          <h2>From catalog to playback.</h2>
+          <h2>From catalog to playback</h2>
           <p>
             Miauflix brings the pieces together.<br class="desktop-break" />
-            Your server does the work. You choose what’s next.
+            Your server does the work. You choose what’s next
           </p>
         </div>
-        <ol class="steps">
+        <ol class="proactive-stages stages-four">
           <li>
-            <div class="step-icon">{{icon:document}}</div>
-            <span class="step-arrow" aria-hidden="true">→</span>
-            <h3><span>01</span> Browse the catalog</h3>
-            <p>TMDB provides movie and TV information, artwork, and details.</p>
+            <div class="proactive-marker">{{icon:document}}</div>
+            <h3>Browse the catalog</h3>
+            <p>TMDB provides movie and TV information, artwork, and details</p>
           </li>
           <li>
-            <div class="step-icon">{{icon:search}}</div>
-            <span class="step-arrow" aria-hidden="true">→</span>
-            <h3><span>02</span> Find a source</h3>
+            <div class="proactive-marker">{{icon:search}}</div>
+            <h3>Find a source</h3>
             <p>
               Your server searches available providers for a playable source on the BitTorrent
-              network.
+              network
             </p>
           </li>
           <li>
-            <div class="step-icon">{{icon:server}}</div>
-            <span class="step-arrow" aria-hidden="true">→</span>
-            <h3><span>03</span> Prepare the stream</h3>
+            <div class="proactive-marker">{{icon:server}}</div>
+            <h3>Prepare the stream</h3>
             <p>
-              Media downloads to your server’s storage. Playback can begin while the file downloads.
+              Media downloads to your server’s storage. Playback can begin while the file downloads
             </p>
           </li>
           <li>
-            <div class="step-icon">{{icon:play}}</div>
-            <h3><span>04</span> Make yourself at home</h3>
-            <p>Watch in your browser or on a supported TV, with playback adapted to your device.</p>
+            <div class="proactive-marker">{{icon:play}}</div>
+            <h3>Make yourself at home</h3>
+            <p>Watch in your browser or on a supported TV, with playback adapted to your device</p>
           </li>
         </ol>
         <p class="how-note">
-          Playback startup depends on the source, your connection, and any conversion needed.
+          Playback startup depends on the source, your connection, and any conversion needed
         </p>
       </section>
       <section class="setup-section container" id="get-started">
@@ -371,8 +388,8 @@
           <div class="setup-heading">
             <div>
               <p class="eyebrow">Easy setup</p>
-              <h2>From Docker to movie night.</h2>
-              <p>Your own streaming service, in a few steps.</p>
+              <h2>From Docker to movie night</h2>
+              <p>Your own streaming service, in a few steps</p>
             </div>
             <a
               class="button"
@@ -388,10 +405,10 @@
                   width="1200"
                   height="675"
                   loading="lazy"
-                  alt="Miauflix first-run screen for creating an administrator account"
+                  alt="Optional Miauflix admin setup screen, available when ALLOW_CREATE_ADMIN_ON_FIRST_RUN is true"
                 />
               </div>
-              <figcaption>1. Create your admin account.</figcaption>
+              <figcaption>Optional admin setup in the browser</figcaption>
             </figure>
             <figure class="product-figure">
               <div class="screen">
@@ -403,30 +420,30 @@
                   alt="Miauflix configuration screen with service settings and connection testing"
                 />
               </div>
-              <figcaption>2. Configure your services in the browser.</figcaption>
+              <figcaption>Configure your services in the browser</figcaption>
             </figure>
           </div>
           <div class="requirements">
             <div>
               {{icon:cube}}
               <h3>Docker</h3>
-              <p>Prebuilt images for AMD64 and ARM64. No source build needed.</p>
+              <p>Prebuilt images for AMD64 and ARM64. No source build needed</p>
             </div>
             <div>
               {{icon:database}}
               <h3>TMDB access token</h3>
-              <p>A free token for catalog metadata and artwork.</p>
+              <p>A free token for catalog metadata and artwork</p>
             </div>
             <div>
               {{icon:storage}}
               <h3>Persistent storage</h3>
-              <p>Space for settings, your viewing data, and downloaded media.</p>
+              <p>Space for settings, your viewing data, and downloaded media</p>
             </div>
             <div class="vpn-requirement">
               {{icon:shield}}
               <h3>A VPN <span>(by default)</span></h3>
               <p>
-                Source discovery and torrent connections require VPN protection unless you opt out.
+                Source discovery and torrent connections require VPN protection unless you opt out
               </p>
             </div>
           </div>
@@ -438,15 +455,24 @@
               </button>
             </div>
             <pre><code id="setup-commands">curl -fsSLO https://raw.githubusercontent.com/maury91/miauflix/main/docker-compose.yml
-docker compose up -d</code></pre>
+ALLOW_CREATE_ADMIN_ON_FIRST_RUN=true docker compose up -d</code></pre>
             <p>
-              Then open <code>http://localhost:3000</code>, create your admin account, and add your
-              TMDB token. Complete setup before opening access to other devices.
+              With <code>ALLOW_CREATE_ADMIN_ON_FIRST_RUN=true</code> Miauflix will show you a page to create the admin account if none exists. <br/>
+              Remember to remove it once you create the admin account.<br/>
+
+              Do not expose your server to the internet while creating the Admin account.
+            </p>
+            <p>
+              <b>Prefer to have Miauflix create the account for you?</b><br/>
+              Use <code>ALLOW_CREATE_ADMIN_ON_FIRST_RUN=false</code> ( or omit it ) and Miauflix creates an admin account with a random password on first startup
+              if no admin exists. Find the credentials in <code>docker compose logs miauflix</code>.
+            </p>
+            <p>
               <a
                 href="https://github.com/maury91/miauflix/blob/main/docs/setup/docker-setup.md#using-a-vpn"
                 >Configure your VPN</a
               >
-              before searching for sources.
+              before searching for sources
             </p>
           </div>
           <p class="copy-status" aria-live="polite"></p>
@@ -512,9 +538,9 @@ docker compose up -d</code></pre>
             <summary>Can I use Miauflix outside my home network? {{icon:chevron}}</summary>
             <div>
               <p>
-                Yes, with a properly configured server. Create your administrator account first,
-                then follow the documentation to set up your domain and HTTPS with Caddy. Keep
-                source search and torrent traffic protected by a VPN.
+                Yes, with a properly configured server. Sign in as the administrator and complete
+                setup first, then follow the documentation to set up your domain and HTTPS with
+                Caddy. Keep source search and torrent traffic protected by a VPN.
               </p>
               <a
                 href="https://github.com/maury91/miauflix/blob/main/docs/setup/docker-setup.md#https-with-a-domain"
@@ -523,11 +549,14 @@ docker compose up -d</code></pre>
             </div>
           </details>
           <details>
-            <summary>Is Miauflix free and open source? {{icon:chevron}}</summary>
+            <summary>Is Miauflix free to use? {{icon:chevron}}</summary>
             <div>
               <p>
-                Yes. Miauflix is available under the MIT license. You provide the server, storage,
-                internet connection, and any external services you choose to use, such as a VPN.
+                Miauflix is free for permitted noncommercial use under the
+                <a href="LICENSE">PolyForm Noncommercial License 1.0.0</a>.
+                You can inspect, modify, and share the source for those purposes. Commercial use
+                requires separate permission. You provide the server, storage, internet connection,
+                and any external services you choose to use, such as a VPN.
               </p>
             </div>
           </details>

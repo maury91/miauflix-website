@@ -35,6 +35,7 @@ export async function build() {
     writeFile(`${output}${cssName}`, styles),
     writeFile(`${output}${jsName}`, script),
     writeFile(`${output}robots.txt`, 'User-agent: *\nAllow: /\n'),
+    cp(`${root}LICENSE`, `${output}LICENSE`),
   ]);
   console.log('Built static website → dist/');
 }

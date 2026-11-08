@@ -1,0 +1,15 @@
+services:
+  website:
+    image: nginx:stable-alpine
+    restart: unless-stopped
+    volumes:
+      - /srv/miauflix-website:/website:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      web:
+        aliases:
+          - miauflix-website
+networks:
+  web:
+    external: true
+    name: tv-pairing_default

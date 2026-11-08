@@ -10,5 +10,8 @@
     "preview": "node scripts/serve.mjs --dist",
     "check": "node scripts/check.mjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0"
 }
